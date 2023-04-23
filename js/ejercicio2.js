@@ -19,3 +19,20 @@
 // Output: Suficiente
 // Output: Número erróneo
 // Output: Introduce un número válido
+
+let nota = prompt("Ingrese una nota de 0 a 10")
+nota = parseInt(nota)
+
+if (nota < 0 || nota > 10) alert("Número erroneo") 
+
+if (isNaN(nota)) alert("Introduce un número válido") 
+
+if (nota >= 0 && nota <= 2) alert("Muy deficiente")
+if (nota >= 3 && nota <= 4) alert("Insuficiente")
+if(nota >= 5 && nota <= 6) alert("Suficiente")
+if(nota == 7) alert("Bien")
+if(nota >= 8 && nota <= 9) alert("Notable") 
+if(nota == 10) alert("Sobresaliente")
+
+
+ 
