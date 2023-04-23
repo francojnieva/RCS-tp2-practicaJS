@@ -4,8 +4,12 @@ let edad = prompt("Por favor, ingrese su edad")
 
 edad = parseInt(edad)
 
-if (edad === Number(edad)) {
-    
-    edad >= 18 ? document.write("Puedes conducir") : document.write("No puedes conducir, eres menor de edad")
+if (isNaN(edad)) {
+    document.write("Por favor ingrese un número")
+} else if (edad >= 18) {
+    document.write("Puedes conducir")
+} else document.write("No puedes conducir, eres menor de edad")
 
-} else document.write("Por favor ingrese un número")
+
+    
+    
