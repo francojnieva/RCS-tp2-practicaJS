@@ -7,3 +7,21 @@
 // 333
 // 22
 // 1
+
+let numero = parseInt(prompt("Por favor ingrese un número entre 1 y 50"))
+
+if (numero < 1 || numero > 50) {
+    alert("Ingrese un número entre 1 y 50") 
+} else if (isNaN(numero)) {
+    alert("No es válido")
+} else {
+    for (i = numero; i >= 1; i--) {
+        for (j = i; j >= 1; j--) {
+            document.write(i)
+        }
+        document.write("<br>")
+    }
+}
+
+
+
